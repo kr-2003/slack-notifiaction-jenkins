@@ -10,7 +10,7 @@ func main(){
 	args := os.Args[1:]
 	fmt.Println(args)
 
-	api := slack.New("xoxb-5254573433526-5263676093908-idKPUKLFMsAdFiXnBIAmYKyV")
+	api := slack.New("xoxb-5254573433526-5261523930851-0vVEp4EOgbxB54uyrQnkqaj8")
 	preText := "*Hello! Your Jenkins build is finished!*"
 	jenkinsURL := "*Build URL: *" + args[0]
 	buildResult := "*" + args[1] + "*"
@@ -35,7 +35,7 @@ func main(){
 		jenkinsBuildDetailsSection,
 	)
 	_, _, _, err := api.SendMessage(
-		"C057RKSDPS8",
+		"C058CRTRLUQ",
 		msg,
 	)
 	if err!=nil {
