@@ -1,7 +1,9 @@
 pipeline {
 
     agent any 
-
+    tools {
+        go 'go-1.11'
+    }
     stages {
         stage('Checkout Codebase'){
             steps{
